@@ -5,11 +5,11 @@ import '../assets/Add.css';
 const Add = (props) => {
   const [value, setValue] = useState('');
   const AddTask = () => {
-
+      console.log(`Agregando el task de: ${value}`)
   }
 
-  const onChange = () => {
-
+  const onChange = (event) => {
+    setValue(event.currentTarget.value);
   }
 
   return (

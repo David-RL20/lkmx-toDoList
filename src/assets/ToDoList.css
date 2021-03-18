@@ -1,5 +1,9 @@
 .toDoList-container {
-  width: 50%;
+  width: 40%;
   background: white;
   border-radius: 5px;
+  padding: 1rem;
+}
+.toDoList-container__title {
+  padding: 0.1rem 1rem;
 }

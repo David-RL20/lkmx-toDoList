@@ -7,7 +7,7 @@ const ToDoList = ()=>{
 
   return (
     <div className='toDoList-container'>
-      <h1>To Do List</h1>
+      <h1 className='toDoList-container__title'>To Do List</h1>
       <Add />
       <TasksList />
     </div>
