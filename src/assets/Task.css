@@ -1,6 +1,52 @@
-.task-container{
-  width: 100%;
+.task-container {
+  width: calc(100% - 1rem);
+  display: flex;
+  background: #eee;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
-.task-container__saveIcon{
-  color: blue;
+
+/* Editing view CSS */
+.task-container__input {
+  width: 95%;
+}
+/* SAVE ICON */
+.task-container__saveIcon {
+  border-color: #9b41f0;
+  color: #9b41f0;
+  margin-left: 5px;
+  width: 5%;
+}
+.task-container__saveIcon:hover {
+  background: #9b41f01f;
+}
+
+/* Normal view CSS */
+.task-container__name {
+  width: 90%;
+  font-weight: 500;
+  font-size: 11pt;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* EDIT ICON */
+.task-container__editIcon {
+  border-color: #2b53f0;
+  color: #2b53f0;
+  width: 5%;
+}
+.task-container__editIcon:hover {
+  background: #2b52f034;
+}
+
+/* DELETE ICON */
+.task-container__deleteIcon {
+  border-color: #eb3d3d;
+  color: #eb3d3d;
+  margin-left: 5px;
+  width: 5%;
+}
+.task-container__deleteIcon:hover {
+  background: rgba(218, 130, 130, 0.185);
 }

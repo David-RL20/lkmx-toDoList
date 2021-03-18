@@ -3,9 +3,9 @@ import '../../assets/utils/IconCustomized.css'
 
 const Icon = (props) => {
   return (
-    <button className={`icon-customized ${props.class}`} onClick={props?.onClick}>
+    <div className={`icon-customized ${props.className}`} onClick={props?.onClick}>
       {props.children}
-    </button>
+    </div>
   );
 }
 

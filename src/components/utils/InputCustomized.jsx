@@ -8,7 +8,7 @@ const Input = (props) =>{
       className={props?.className} 
       placeholder={props?.placeholder} 
       onChange={props?.onChange}
-      value={props?.value || undefined}
+      defaultValue={props?.value || undefined}
       />
   );
 };
