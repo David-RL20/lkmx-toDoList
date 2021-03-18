@@ -13,13 +13,13 @@ const Add = (props) => {
   }
 
   return (
-    <div className='search-container'>
+    <div className='add-container'>
       <InputCustomized 
-        className='search-container__input' 
+        className='add-container__input' 
         placeholder='Escribe una tarea'
         onChange = {onChange}
       />
-      <button className='search-container__button' onClick={AddTask}>Agregar</button>
+      <button className='add-container__button' onClick={AddTask}>Agregar</button>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-.search-container {
+.add-container {
   width: calc(100% - 2rem);
   height: 5vh;
   padding: 0 1rem;
@@ -6,11 +6,11 @@
   align-items: center;
 }
 
-.search-container__input {
+.add-container__input {
   width: 80%;
   height: calc(100% - 4px);
 }
-.search-container__button {
+.add-container__button {
   background: rgb(31, 102, 209);
   color: #ffffff;
   width: calc(20% - 10px);
