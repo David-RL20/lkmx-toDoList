@@ -1,11 +1,22 @@
 import React,{ useState } from 'react';
 import InputCustomized from './utils/InputCustomized';
 import { connect } from 'react-redux';
+import { addTask } from '../../actions';
 import '../assets/Add.css';
 const Add = (props) => {
   const [value, setValue] = useState('');
+  
+  //Generando un nuevo id
+  //Auto incrementable
   const AddTask = () => {
-      console.log(`Agregando el task de: ${value}`)
+    let _id = new Number(props?.tasks.length + 1);
+    props.addTask({
+      id: _id,
+      name: value,
+    })
+    //Reset add input
+    const a = document.getElementsByClassName('add-container__input');
+    a[0].value='';
   }
 
   const onChange = (event) => {
@@ -27,5 +38,7 @@ const Add = (props) => {
 const mapStateToProps = (state) => {
   return state
 };
-
-export default connect(mapStateToProps, null)(Add);
+const mapDispatchToProps = {
+  addTask
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Add);

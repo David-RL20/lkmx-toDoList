@@ -9,6 +9,7 @@ const Input = (props) =>{
       placeholder={props?.placeholder} 
       onChange={props?.onChange}
       defaultValue={props?.value || undefined}
+      ref={props?.ref}
       />
   );
 };
