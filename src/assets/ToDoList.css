@@ -7,3 +7,25 @@
 .toDoList-container__title {
   padding: 0.1rem 1rem;
 }
+@media only screen and (max-width: 1085px) {
+  .toDoList-container {
+    width: 60%;
+  }
+  * {
+    font-size: medium;
+  }
+  button,
+  div {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 748px) {
+  .toDoList-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .toDoList-container {
+    width: 98%;
+  }
+}
