@@ -1,0 +1,9 @@
+.listEmpty-container {
+    width: 100%;
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.listEmpty-container__title {
+    color: #919191;
+}

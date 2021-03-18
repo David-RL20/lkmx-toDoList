@@ -1,0 +1,10 @@
+#input-cutomized{
+  border: 1px solid #999;
+  padding: .1rem;
+}
+#input-cutomized:active{
+  border-color: rgb(189, 19, 19) ;
+}
+#input-cutomized::placeholder{
+  color: #999;
+}

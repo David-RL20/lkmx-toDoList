@@ -1,0 +1,15 @@
+.search-container{
+  width: calc(100% - 2rem);
+  height: 10vh;
+  padding: 0 1rem;
+  display: flex;
+}
+
+.search-container__input{
+  width: 90%;
+}
+.search-container__button{
+  background: blue;
+  width: calc(100% - .2rem);
+  padding: .1rem;
+}
