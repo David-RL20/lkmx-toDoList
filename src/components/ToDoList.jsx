@@ -1,6 +1,6 @@
 import React from 'react';
-import TasksList from 'TasksList';
-import Add from 'Add';
+import TasksList from './TasksList';
+import Add from './Add';
 
 const ToDoList = ()=>{
 
@@ -12,3 +12,5 @@ const ToDoList = ()=>{
     </div>
   );
 }
+
+export default ToDoList;

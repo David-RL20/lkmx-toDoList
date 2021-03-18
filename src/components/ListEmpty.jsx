@@ -1,5 +1,5 @@
 import React from 'react';
-import './ListEmpty.css';
+import '../assets/ListEmpty.css';
 
 const ListEmpty = () => {
 
@@ -9,3 +9,5 @@ const ListEmpty = () => {
     </div>
   );
 }
+
+export default ListEmpty;

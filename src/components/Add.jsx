@@ -1,6 +1,6 @@
 import React,{ useState } from 'react';
 import InputCustomized from './utils/InputCustomized';
-import { connect } from 'redux';
+import { connect } from 'react-redux';
 import '../assets/Add.css';
 const Search = (props) => {
   const [value, setValue] = useState('');
