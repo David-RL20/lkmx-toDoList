@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import InputCustomized from './utils/InputCustomized';
 import { connect } from 'react-redux';
 import '../assets/Add.css';
-const Search = (props) => {
+const Add = (props) => {
   const [value, setValue] = useState('');
   const AddTask = () => {
 
@@ -24,6 +24,8 @@ const Search = (props) => {
   );
 };
 
-const mapStateToProps = () => state;
+const mapStateToProps = (state) => {
+  return state
+};
 
-export default connect(mapStateToProps, null)(Search);
+export default connect(mapStateToProps, null)(Add);
