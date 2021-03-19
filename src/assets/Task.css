@@ -50,3 +50,19 @@
 .task-container__deleteIcon:hover {
   background: rgba(218, 130, 130, 0.185);
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .task-container__name {
+    font-size: 30pt;
+  }
+  .task-container__deleteIcon,
+  .task-container__editIcon,
+  .task-container__saveIcon {
+    width: 10%;
+  }
+  .task-container {
+    height: 5vh;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+  }
+}
