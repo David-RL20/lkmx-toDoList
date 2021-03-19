@@ -4,19 +4,24 @@ import { connect } from 'react-redux';
 import { addTask } from '../../actions';
 import '../assets/Add.css';
 const Add = (props) => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(undefined);
   
   //Generando un nuevo id
   //Auto incrementable
   const AddTask = () => {
-    let _id = new Number(props?.tasks.length + 1);
-    props.addTask({
-      id: _id,
-      name: value,
-    })
-    //Reset add input
-    const a = document.getElementsByClassName('add-container__input');
-    a[0].value='';
+    if(value != undefined){
+      let _id = new Number(props?.tasks.length + 1);
+      props.addTask({
+        id: _id,
+        name: value,
+      })
+      //Reset add input
+      const a = document.getElementsByClassName('add-container__input');
+      a[0].value='';
+      setValue(undefined)
+    }else{
+      alert('No puedes agregar tareas vacias.')
+    }
   }
 
   const onChange = (event) => {
